@@ -37,6 +37,8 @@
    button.addEventListener("click", function() {
       count++;
       countDisplay.textContent = count;
+      button.style.backgroundColor = count % 2 === 0 ? "white" : "red";
+
    });
 </script>
 
