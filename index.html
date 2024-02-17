@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWS Test Page</title>
@@ -37,10 +38,10 @@
    button.addEventListener("click", function() {
       count++;
       countDisplay.textContent = count;
-      button.innerText = 'who clicked me?'; 
+      button.style.backgroundColor = count % 2 === 0 ? "white" : "red";
+      button.innerText = 'who clicked me?';
    });
-
-
+   document.getElementById("myButton").style.border = "thick solid #0000FF";
 </script>
 
     </section>
