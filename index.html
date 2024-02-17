@@ -27,6 +27,19 @@
 
       </p>
       <p>Hello this is Adriana's test</p>
+
+      <button id="myButton">Click Me</button>
+<p id="count"></p>
+<script>
+   var count = 0;
+   var button = document.getElementById("myButton");
+   var countDisplay = document.getElementById("count");
+   button.addEventListener("click", function() {
+      count++;
+      countDisplay.textContent = count;
+   });
+</script>
+
     </section>
   </body>
 </html>
